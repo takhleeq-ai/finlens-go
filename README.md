@@ -12,4 +12,23 @@ An AI-powered income & expense verifier built with Golang — built to parse tra
 ## 🚀 Run Locally
 
 ```bash
-go run main.go
+go run main.go. 
+```
+
+## Example API Usage  
+
+```bash
+curl -X POST http://localhost:8080/api/analyse \
+  -H "Content-Type: application/json" \
+  --data-binary @data/transactions.json
+```
+
+## Structure
+
+finlens-go/
+├── main.go
+├── internal/
+│   ├── handlers/
+│   └── logic/
+├── models/
+├── data/
