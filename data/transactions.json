@@ -1,0 +1,6 @@
+[
+  { "description": "Freelance Payment", "amount": 1200 },
+  { "description": "Tesco", "amount": -150 },
+  { "description": "Rent", "amount": -700 },
+  { "description": "Uber", "amount": -25 }
+]
