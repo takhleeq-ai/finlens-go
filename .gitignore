@@ -1,0 +1,16 @@
+# Build files
+*.exe
+*.out
+*.test
+
+# Dependency files
+vendor/
+
+# IDE and OS
+.vscode/
+.DS_Store
+
+# Env secrets
+.env
+
+.env copy
