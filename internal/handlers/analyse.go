@@ -18,9 +18,10 @@ func AnalyseHandler(w http.ResponseWriter, r *http.Request) {
 
 	txs = logic.CategoriseTransactions(txs)
 	summary := logic.GenerateSummary(txs)
-
+	aiSummary, _ := logic.GenerateAISummary(summary.Income, summary.Expenses, summary.Surplus, summary.HealthScore)
 	output := map[string]interface{}{
 		"summary":      summary,
+		"ai_summary":   aiSummary,
 		"transactions": txs,
 	}
 
